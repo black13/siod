@@ -359,8 +359,10 @@ static void ignore_puts(char *st)
 {}
 
 static void noprompt_puts(char *st)
-{if (strcmp(st,"> ") != 0)
-   put_st(st);}
+{
+    if (strcmp(st,"> ") != 0)
+        put_st(st);
+}
 
 static char *repl_c_string_arg = NULL;
 static char *repl_c_string_out = NULL;
@@ -369,79 +371,98 @@ static long repl_c_string_print_len = 0;
 
 
 static LISP repl_c_string_read(void)
-{LISP s;
- if (repl_c_string_arg == NULL)
-   return(get_eof_val());
- s = strcons(strlen(repl_c_string_arg),repl_c_string_arg);
- repl_c_string_arg = NULL;
- if (repl_c_string_out) repl_c_string_out[0] = 0;
- return(read_from_string(s));}
+{
+    LISP s;
+    if (repl_c_string_arg == NULL)
+        return(get_eof_val());
+    s = strcons(strlen(repl_c_string_arg),repl_c_string_arg);
+    repl_c_string_arg = NULL;
+    if (repl_c_string_out) repl_c_string_out[0] = 0;
+    return(read_from_string(s));
+}
 
 static void ignore_print(LISP x)
-{repl_c_string_flag = 1;}
+{
+    repl_c_string_flag = 1;
+}
 
 static void not_ignore_print(LISP x)
-{repl_c_string_flag = 1;
- lprint(x,NIL);}
+{
+    repl_c_string_flag = 1;
+    lprint(x,NIL);
+}
 
 struct rcsp_puts
-{char *ptr;
- char *end;};
+{
+    char *ptr;
+    char *end;
+};
 
 static int rcsp_puts(char *from,void *cb)
-{long fromlen,intolen,cplen;
- struct rcsp_puts *p = (struct rcsp_puts *) cb;
- fromlen = strlen(from);
- intolen = p->end - p->ptr;
- cplen = (fromlen > intolen) ? intolen : fromlen;
- memcpy(p->ptr,from,cplen);
- p->ptr = &p->ptr[cplen];
- *p->ptr = 0;
- if (cplen != fromlen)
-   err("repl_c_string_print overflow",NIL);
- return(1);}
+{
+    long fromlen,intolen,cplen;
+    struct rcsp_puts *p = (struct rcsp_puts *) cb;
+    fromlen = strlen(from);
+    intolen = p->end - p->ptr;
+    cplen = (fromlen > intolen) ? intolen : fromlen;
+    memcpy(p->ptr,from,cplen);
+    p->ptr = &p->ptr[cplen];
+    *p->ptr = 0;
+    if (cplen != fromlen)
+        err("repl_c_string_print overflow",NIL);
+    return(1);
+}
 
 static void repl_c_string_print(LISP x)
-{struct gen_printio s;
- struct rcsp_puts p;
- s.putc_fcn = NULL;
- s.puts_fcn = rcsp_puts;
- p.ptr = repl_c_string_out;
- p.end = &repl_c_string_out[repl_c_string_print_len - 1];
- s.cb_argument = &p;
- lprin1g(x,&s);
- repl_c_string_flag = 1;}
+{
+    struct gen_printio s;
+    struct rcsp_puts p;
+    s.putc_fcn = NULL;
+    s.puts_fcn = rcsp_puts;
+    p.ptr = repl_c_string_out;
+    p.end = &repl_c_string_out[repl_c_string_print_len - 1];
+    s.cb_argument = &p;
+    lprin1g(x,&s);
+    repl_c_string_flag = 1;
+}
 
-long __stdcall repl_c_string(char *str,
-           long want_sigint,long want_init,long want_print)
-{struct repl_hooks h;
- long retval;
- h.repl_read = repl_c_string_read;
- h.repl_eval = NULL;
- if (want_print > 1)
-   {h.repl_puts = ignore_puts;
-    h.repl_print = repl_c_string_print;
-    repl_c_string_print_len = want_print;
-    repl_c_string_out = str;}
- else if (want_print)
-   {h.repl_puts = noprompt_puts;
-    h.repl_print = not_ignore_print;
-    repl_c_string_print_len = 0;
-    repl_c_string_out = NULL;}
- else
-   {h.repl_puts = ignore_puts;
-    h.repl_print = ignore_print;
-    repl_c_string_print_len = 0;
-    repl_c_string_out = NULL;}
- repl_c_string_arg = str;
- repl_c_string_flag = 0;
- retval = repl_driver(want_sigint,want_init,&h);
- if (retval != 0)
-   return(retval);
- else if (repl_c_string_flag == 1)
-   return(0);
- else
-  return(2);}
+long __stdcall repl_c_string(char *str,long want_sigint,long want_init,long want_print)
+{
+    struct repl_hooks h;
+    long retval;
+    h.repl_read = repl_c_string_read;
+    h.repl_eval = NULL;
+    if (want_print > 1)
+    {
+        h.repl_puts = ignore_puts;
+        h.repl_print = repl_c_string_print;
+        repl_c_string_print_len = want_print;
+        repl_c_string_out = str;
+    }
+    else if (want_print)
+    {
+        h.repl_puts = noprompt_puts;
+        h.repl_print = not_ignore_print;
+        repl_c_string_print_len = 0;
+        repl_c_string_out = NULL;
+    }
+    else
+    {
+        h.repl_puts = ignore_puts;
+        h.repl_print = ignore_print;
+        repl_c_string_print_len = 0;
+        repl_c_string_out = NULL;
+    }
+    repl_c_string_arg = str;
+    repl_c_string_flag = 0;
+    retval = repl_driver(want_sigint,want_init,&h);
+    if (retval != 0)
+        return(retval);
+    else if (repl_c_string_flag == 1)
+        return(0);
+    else
+        return(2);
+}
 
 #ifdef unix
 #include <sys/types.h>
@@ -563,25 +584,30 @@ void grepl_puts(char *st,void (*repl_puts)(char *))
    (*repl_puts)(st);}
      
 long repl(struct repl_hooks *h)
-{LISP x,cw = 0;
- double rt,ct;
- while(1)
-   {if ((gc_kind_copying == 1) && ((gc_status_flag) || heap >= heap_end))
-     {rt = myruntime();
-      gc_stop_and_copy();
-      if (siod_verbose_level >= 2)
-    {sprintf(tkbuffer,
-         "GC took %g seconds, %ld compressed to %ld, %ld free\n",
-         myruntime()-rt,old_heap_used,(long)(heap-heap_org),(long)(heap_end-heap));
-     grepl_puts(tkbuffer,h->repl_puts);}}
-    if (siod_verbose_level >= 2)
-      grepl_puts("> ",h->repl_puts);
-    if (h->repl_read == NULL)
-      x = lread(NIL);
-    else
-      x = (*h->repl_read)();
-    if EQ(x,eof_val) break;
-    rt = myruntime();
+{
+    LISP x,cw = 0;
+    double rt,ct;
+    while(1)
+    {
+        if ((gc_kind_copying == 1) && ((gc_status_flag) || heap >= heap_end))
+        {
+            rt = myruntime();
+            gc_stop_and_copy();
+            if (siod_verbose_level >= 2)
+            {
+                sprintf(tkbuffer,"GC took %g seconds, %ld compressed to %ld, %ld free\n",
+                myruntime()-rt,old_heap_used,(long)(heap-heap_org),(long)(heap_end-heap));
+                grepl_puts(tkbuffer,h->repl_puts);
+            }
+        }
+        if (siod_verbose_level >= 2)
+        grepl_puts("> ",h->repl_puts);
+        if (h->repl_read == NULL)
+            x = lread(NIL);
+        else
+            x = (*h->repl_read)();
+        if EQ(x,eof_val) break;
+        rt = myruntime();
     ct = myrealtime();
     if (gc_kind_copying == 1)
       cw = heap;
@@ -1211,33 +1237,43 @@ void init_msubr(char *name, LISP (*fcn)(LISP *,LISP *))
 {init_subr(name,tc_msubr,(SUBR_FUNC)fcn);}
 
 LISP assq(LISP x,LISP alist)
-{LISP l,tmp;
- for(l=alist;CONSP(l);l=CDR(l))
-   {tmp = CAR(l);
-    if (CONSP(tmp) && EQ(CAR(tmp),x)) return(tmp);
-    INTERRUPT_CHECK();}
- if EQ(l,NIL) return(NIL);
- return(err("improper list to assq",alist));}
+{
+    LISP l,tmp;
+    for(l=alist;CONSP(l);l=CDR(l))
+    {
+        tmp = CAR(l);
+        if (CONSP(tmp) && EQ(CAR(tmp),x)) return(tmp);
+        INTERRUPT_CHECK();
+    }
+    if EQ(l,NIL) return(NIL);
+        return(err("improper list to assq",alist));
+}
 
 
 struct user_type_hooks *get_user_type_hooks(long type)
-{long n;
- if (user_types == NULL)
-   {n = sizeof(struct user_type_hooks) * tc_table_dim;
-    user_types = (struct user_type_hooks *) must_malloc(n);
-    memset(user_types,0,n);}
- if ((type >= 0) && (type < tc_table_dim))
-   return(&user_types[type]);
- else
-   err("type number out of range",NIL);
- return(NULL);}
+{
+    long n;
+    if (user_types == NULL)
+    {
+        n = sizeof(struct user_type_hooks) * tc_table_dim;
+        user_types = (struct user_type_hooks *) must_malloc(n);
+        memset(user_types,0,n);
+    }
+    if ((type >= 0) && (type < tc_table_dim))
+        return(&user_types[type]);
+    else
+        err("type number out of range",NIL);
+    return(NULL);
+}
 
 long allocate_user_tc(void)
-{long x = user_tc_next;
- if (x > tc_user_max)
-   err("ran out of user type codes",NIL);
- ++user_tc_next;
- return(x);}
+{
+    long x = user_tc_next;
+    if (x > tc_user_max)
+        err("ran out of user type codes",NIL);
+    ++user_tc_next;
+    return(x);
+}
  
 void set_gc_hooks(long type,
           LISP (*rel)(LISP),
@@ -1245,198 +1281,244 @@ void set_gc_hooks(long type,
           void (*scan)(LISP),
           void (*free)(LISP),
           long *kind)
-{struct user_type_hooks *p;
- p = get_user_type_hooks(type);
- p->gc_relocate = rel;
- p->gc_scan = scan;
- p->gc_mark = mark;
- p->gc_free = free;
- *kind = gc_kind_copying;}
+{
+    struct user_type_hooks *p;
+    p = get_user_type_hooks(type);
+    p->gc_relocate = rel;
+    p->gc_scan = scan;
+    p->gc_mark = mark;
+    p->gc_free = free;
+    *kind = gc_kind_copying;
+}
 
 LISP gc_relocate(LISP x)
-{LISP nw;
- struct user_type_hooks *p;
- if EQ(x,NIL) return(NIL);
- if ((*x).gc_mark == 1) return(CAR(x));
- switch TYPE(x)
-   {case tc_flonum:
-    case tc_cons:
-    case tc_symbol:
-    case tc_closure:
-    case tc_subr_0:
-    case tc_subr_1:
-    case tc_subr_2:
-    case tc_subr_2n:
-    case tc_subr_3:
-    case tc_subr_4:
-    case tc_subr_5:
-    case tc_lsubr:
-    case tc_fsubr:
-    case tc_msubr:
-      if ((nw = heap) >= heap_end) gc_fatal_error();
-      heap = nw+1;
-      memcpy(nw,x,sizeof(struct obj));
-      break;
-    default:
-      p = get_user_type_hooks(TYPE(x));
-      if (p->gc_relocate)
-    nw = (*p->gc_relocate)(x);
-      else
-    {if ((nw = heap) >= heap_end) gc_fatal_error();
-     heap = nw+1;
-     memcpy(nw,x,sizeof(struct obj));}}
- (*x).gc_mark = 1;
- CAR(x) = nw;
- return(nw);}
+{
+    LISP nw;
+    struct user_type_hooks *p;
+    if EQ(x,NIL) return(NIL);
+    if ((*x).gc_mark == 1) 
+        return(CAR(x));
+    switch TYPE(x)
+    {
+        case tc_flonum:
+        case tc_cons:
+        case tc_symbol:
+        case tc_closure:
+        case tc_subr_0:
+        case tc_subr_1:
+        case tc_subr_2:
+        case tc_subr_2n:
+        case tc_subr_3:
+        case tc_subr_4:
+        case tc_subr_5:
+        case tc_lsubr:
+        case tc_fsubr:
+        case tc_msubr:
+        if ((nw = heap) >= heap_end) 
+        gc_fatal_error();
+        heap = nw+1;
+        memcpy(nw,x,sizeof(struct obj));
+        break;
+        default:
+        p = get_user_type_hooks(TYPE(x));
+        if (p->gc_relocate)
+            nw = (*p->gc_relocate)(x);
+        else
+        {
+            if ((nw = heap) >= heap_end) gc_fatal_error();
+            heap = nw+1;
+            memcpy(nw,x,sizeof(struct obj));
+        }
+    }
+    (*x).gc_mark = 1;
+    CAR(x) = nw;
+    return(nw);
+}
 
 LISP get_newspace(void)
-{LISP newspace;
- if (heap_org == heaps[0])
-   newspace = heaps[1];
- else
-   newspace = heaps[0];
- heap = newspace;
- heap_org = heap;
- heap_end = heap + heap_size;
- return(newspace);}
+{
+    LISP newspace;
+    if (heap_org == heaps[0])
+        newspace = heaps[1];
+    else
+        newspace = heaps[0];
+    heap = newspace;
+    heap_org = heap;
+    heap_end = heap + heap_size;
+    return(newspace);
+}
 
 void scan_newspace(LISP newspace)
-{LISP ptr;
- struct user_type_hooks *p;
- for(ptr=newspace; ptr < heap; ++ptr)
-   {switch TYPE(ptr)
-      {case tc_cons:
-       case tc_closure:
-     CAR(ptr) = gc_relocate(CAR(ptr));
-     CDR(ptr) = gc_relocate(CDR(ptr));
-     break;
-       case tc_symbol:
-     VCELL(ptr) = gc_relocate(VCELL(ptr));
-     break;
-       case tc_flonum:
-       case tc_subr_0:
-       case tc_subr_1:
-       case tc_subr_2:
-       case tc_subr_2n:
-       case tc_subr_3:
-       case tc_subr_4:
-       case tc_subr_5:
-       case tc_lsubr:
-       case tc_fsubr:
-       case tc_msubr:
-     break;
-       default:
-     p = get_user_type_hooks(TYPE(ptr));
-     if (p->gc_scan) (*p->gc_scan)(ptr);}}}
+{
+    LISP ptr;
+    struct user_type_hooks *p;
+    for(ptr=newspace; ptr < heap; ++ptr)
+    {
+        switch TYPE(ptr)
+        {
+            case tc_cons:
+            case tc_closure:
+                 CAR(ptr) = gc_relocate(CAR(ptr));
+                 CDR(ptr) = gc_relocate(CDR(ptr));
+            break;
+            case tc_symbol:
+                VCELL(ptr) = gc_relocate(VCELL(ptr));
+            break;
+            case tc_flonum:
+            case tc_subr_0:
+            case tc_subr_1:
+            case tc_subr_2:
+            case tc_subr_2n:
+            case tc_subr_3:
+            case tc_subr_4:
+            case tc_subr_5:
+            case tc_lsubr:
+            case tc_fsubr:
+            case tc_msubr:
+            break;
+            default:
+            p = get_user_type_hooks(TYPE(ptr));
+            if (p->gc_scan) 
+                (*p->gc_scan)(ptr);
+        }
+    }
+}
 
 void free_oldspace(LISP space,LISP end)
-{LISP ptr;
- struct user_type_hooks *p;
- for(ptr=space; ptr < end; ++ptr)
-   if (ptr->gc_mark == 0)
-     switch TYPE(ptr)
-       {case tc_cons:
-    case tc_closure:
-    case tc_symbol:
-    case tc_flonum:
-    case tc_subr_0:
-    case tc_subr_1:
-    case tc_subr_2:
-    case tc_subr_2n:
-    case tc_subr_3:
-    case tc_subr_4:
-    case tc_subr_5:
-    case tc_lsubr:
-    case tc_fsubr:
-    case tc_msubr:
-      break;
-    default:
-      p = get_user_type_hooks(TYPE(ptr));
-      if (p->gc_free) (*p->gc_free)(ptr);}}
+{
+    LISP ptr;
+    struct user_type_hooks *p;
+    for(ptr=space; ptr < end; ++ptr)
+    if (ptr->gc_mark == 0)
+    switch TYPE(ptr)
+    {
+        case tc_cons:
+        case tc_closure:
+        case tc_symbol:
+        case tc_flonum:
+        case tc_subr_0:
+        case tc_subr_1:
+        case tc_subr_2:
+        case tc_subr_2n:
+        case tc_subr_3:
+        case tc_subr_4:
+        case tc_subr_5:
+        case tc_lsubr:
+        case tc_fsubr:
+        case tc_msubr:
+            break;
+        default:
+        p = get_user_type_hooks(TYPE(ptr));
+        if (p->gc_free) (*p->gc_free)(ptr);
+    }
+}
       
 void gc_stop_and_copy(void)
-{LISP newspace,oldspace,end;
- long flag;
- flag = no_interrupt(1);
- errjmp_ok = 0;
- oldspace = heap_org;
- end = heap;
- old_heap_used = end - oldspace;
- newspace = get_newspace();
- scan_registers();
- scan_newspace(newspace);
- free_oldspace(oldspace,end);
- errjmp_ok = 1;
- no_interrupt(flag);}
+{
+    LISP newspace,oldspace,end;
+    long flag;
+    flag = no_interrupt(1);
+    errjmp_ok = 0;
+    oldspace = heap_org;
+    end = heap;
+    old_heap_used = end - oldspace;
+    newspace = get_newspace();
+    scan_registers();
+    scan_newspace(newspace);
+    free_oldspace(oldspace,end);
+    errjmp_ok = 1;
+    no_interrupt(flag);
+}
 
 LISP allocate_aheap(void)
-{long j,flag;
- LISP ptr,end,next;
- gc_kind_check();
- for(j=0;j<nheaps;++j)
-   if (!heaps[j])
-     {flag = no_interrupt(1);
-      if (gc_status_flag && (siod_verbose_level >= 4))
-    printf("[allocating heap %ld]\n",j);
-      heaps[j] = (LISP) must_malloc(sizeof(struct obj)*heap_size);
-      ptr = heaps[j];
-      end = heaps[j] + heap_size;
-      while(1)
-    {(*ptr).type = tc_free_cell;
-     next = ptr + 1;
-     if (next < end)
-       {CDR(ptr) = next;
-        ptr = next;}
-     else
-       {CDR(ptr) = freelist;
-        break;}}
-      freelist = heaps[j];
-      flag = no_interrupt(flag);
-      return(sym_t);}
- return(NIL);}
+{
+    long j,flag;
+    LISP ptr,end,next;
+    gc_kind_check();
+    for(j=0;j<nheaps;++j)
+    if (!heaps[j])
+    {
+        flag = no_interrupt(1);
+        if (gc_status_flag && (siod_verbose_level >= 4))
+            printf("[allocating heap %ld]\n",j);
+        heaps[j] = (LISP) must_malloc(sizeof(struct obj)*heap_size);
+        ptr = heaps[j];
+        end = heaps[j] + heap_size;
+        while(1)
+        {
+            (*ptr).type = tc_free_cell;
+            next = ptr + 1;
+            if (next < end)
+            {
+                CDR(ptr) = next;
+                ptr = next;
+            }
+            else
+            {
+                CDR(ptr) = freelist;
+                break;
+            }
+        }
+        freelist = heaps[j];
+        flag = no_interrupt(flag);
+        return(sym_t);
+    }
+    return(NIL);
+}
 
 void gc_for_newcell(void)
-{long flag,n;
- LISP l;
- if (heap < heap_end)
-   {freelist = heap;
-    CDR(freelist) = NIL;
-    ++heap;
-    return;}
- if (errjmp_ok == 0) gc_fatal_error();
- flag = no_interrupt(1);
- errjmp_ok = 0;
- gc_mark_and_sweep();
- errjmp_ok = 1;
- no_interrupt(flag);
- for(n=0,l=freelist;(n < 100) && NNULLP(l); ++n) l = CDR(l);
- if (n == 0)
-   {if NULLP(allocate_aheap())
-      gc_fatal_error();}
- else if ((n == 100) && NNULLP(sym_after_gc))
-   leval(leval(sym_after_gc,NIL),NIL);
- else
-   allocate_aheap();}
+{   
+    long flag,n;
+    LISP l;
+    if (heap < heap_end)
+    {
+        freelist = heap;
+        CDR(freelist) = NIL;
+        ++heap;
+        return;
+    }
+    if (errjmp_ok == 0) 
+        gc_fatal_error();
+    flag = no_interrupt(1);
+    errjmp_ok = 0;
+    gc_mark_and_sweep();
+    errjmp_ok = 1;
+    no_interrupt(flag);
+    for(n=0,l=freelist;(n < 100) && NNULLP(l); ++n) 
+        l = CDR(l);
+    if (n == 0)
+    {
+        if NULLP(allocate_aheap())
+            gc_fatal_error();
+    }
+    else if ((n == 100) && NNULLP(sym_after_gc))
+        leval(leval(sym_after_gc,NIL),NIL);
+    else
+    allocate_aheap();
+}
 
 void gc_mark_and_sweep(void)
-{LISP stack_end;
- gc_ms_stats_start();
- while(heap < heap_end)
-   {heap->type = tc_free_cell;
-    heap->gc_mark = 0;
-    ++heap;}
- setjmp(save_regs_gc_mark);
- mark_locations((LISP *) save_regs_gc_mark,
-        (LISP *) (((char *) save_regs_gc_mark) + sizeof(save_regs_gc_mark)));
- mark_protected_registers();
- mark_locations((LISP *) stack_start_ptr,
-        (LISP *) &stack_end);
-#ifdef THINK_C
- mark_locations((LISP *) ((char *) stack_start_ptr + 2),
-        (LISP *) ((char *) &stack_end + 2));
-#endif
- gc_sweep();
- gc_ms_stats_end();}
+{
+    LISP stack_end;
+    gc_ms_stats_start();
+    while(heap < heap_end)
+    {
+        heap->type = tc_free_cell;
+        heap->gc_mark = 0;
+        ++heap;
+    }
+    setjmp(save_regs_gc_mark);
+    mark_locations((LISP *) save_regs_gc_mark,
+    (LISP *) (((char *) save_regs_gc_mark) + sizeof(save_regs_gc_mark)));
+    mark_protected_registers();
+    mark_locations((LISP *) stack_start_ptr,(LISP *) &stack_end);
+    #ifdef THINK_C
+    mark_locations((LISP *) ((char *) stack_start_ptr + 2),
+    (LISP *) ((char *) &stack_end + 2));
+    #endif
+    gc_sweep();
+    gc_ms_stats_end();
+}
 
 void gc_ms_stats_start(void)
 {gc_rt = myruntime();
@@ -1445,58 +1527,70 @@ void gc_ms_stats_start(void)
    printf("[starting GC]\n");}
 
 void gc_ms_stats_end(void)
-{gc_rt = myruntime() - gc_rt;
- gc_time_taken = gc_time_taken + gc_rt;
- if (gc_status_flag && (siod_verbose_level >= 4))
-   printf("[GC took %g cpu seconds, %ld cells collected]\n",
-      gc_rt,
-      gc_cells_collected);}
+{
+    gc_rt = myruntime() - gc_rt;
+    gc_time_taken = gc_time_taken + gc_rt;
+    if (gc_status_flag && (siod_verbose_level >= 4))
+    printf("[GC took %g cpu seconds, %ld cells collected]\n",
+    gc_rt,
+    gc_cells_collected);
+}
 
 void gc_mark(LISP ptr)
-{struct user_type_hooks *p;
- gc_mark_loop:
- if NULLP(ptr) return;
- if ((*ptr).gc_mark) return;
- (*ptr).gc_mark = 1;
- switch ((*ptr).type)
-   {case tc_flonum:
-      break;
-    case tc_cons:
-      gc_mark(CAR(ptr));
-      ptr = CDR(ptr);
-      goto gc_mark_loop;
-    case tc_symbol:
-      ptr = VCELL(ptr);
-      goto gc_mark_loop;
-    case tc_closure:
-      gc_mark((*ptr).storage_as.closure.code);
-      ptr = (*ptr).storage_as.closure.env;
-      goto gc_mark_loop;
-    case tc_subr_0:
-    case tc_subr_1:
-    case tc_subr_2:
-    case tc_subr_2n:
-    case tc_subr_3:
-    case tc_subr_4:
-    case tc_subr_5:
-    case tc_lsubr:
-    case tc_fsubr:
-    case tc_msubr:
+{
+    struct user_type_hooks *p;
+    gc_mark_loop:
+    if NULLP(ptr) 
+        return;
+    if ((*ptr).gc_mark) 
+        return;
+    (*ptr).gc_mark = 1;
+    switch ((*ptr).type)
+    {
+        case tc_flonum:
+            break;
+        case tc_cons:
+            gc_mark(CAR(ptr));
+            ptr = CDR(ptr);
+            goto gc_mark_loop;
+            case tc_symbol:
+            ptr = VCELL(ptr);
+            goto gc_mark_loop;
+            case tc_closure:
+            gc_mark((*ptr).storage_as.closure.code);
+            ptr = (*ptr).storage_as.closure.env;
+            goto gc_mark_loop;
+        case tc_subr_0:
+        case tc_subr_1:
+        case tc_subr_2:
+        case tc_subr_2n:
+        case tc_subr_3:
+        case tc_subr_4:
+        case tc_subr_5:
+        case tc_lsubr:
+        case tc_fsubr:
+        case tc_msubr:
       break;
     default:
-      p = get_user_type_hooks(TYPE(ptr));
-      if (p->gc_mark)
-    ptr = (*p->gc_mark)(ptr);}}
+        p = get_user_type_hooks(TYPE(ptr));
+    if (p->gc_mark)
+    ptr = (*p->gc_mark)(ptr);
+    }
+}
 
 void mark_protected_registers(void)
-{struct gc_protected *reg;
- LISP *location;
- long j,n;
- for(reg = protected_registers; reg; reg = (*reg).next)
-   {location = (*reg).location;
-    n = (*reg).length;
-    for(j=0;j<n;++j)
-      gc_mark(location[j]);}}
+{
+    struct gc_protected *reg;
+    LISP *location;
+    long j,n;
+    for(reg = protected_registers; reg; reg = (*reg).next)
+    {
+        location = (*reg).location;
+        n = (*reg).length;
+        for(j=0;j<n;++j)
+            gc_mark(location[j]);
+    }
+}
 
 void mark_locations(LISP *start,LISP *end)
 {LISP *tmp;
@@ -1509,86 +1603,98 @@ void mark_locations(LISP *start,LISP *end)
  mark_locations_array(start,n);}
 
 long looks_pointerp(LISP p)
-{long j;
- LISP h;
- for(j=0;j<nheaps;++j)
-   if ((h = heaps[j]) &&
-       (p >= h) &&
-       (p < (h + heap_size)) &&
-       (((((char *)p) - ((char *)h)) % sizeof(struct obj)) == 0) &&
-       NTYPEP(p,tc_free_cell))
-     return(1);
- return(0);}
+{
+    long j;
+    LISP h;
+    for(j=0;j<nheaps;++j)
+        if ((h = heaps[j]) && (p >= h) && (p < (h + heap_size)) && (((((char *)p) - ((char *)h)) % sizeof(struct obj)) == 0) && NTYPEP(p,tc_free_cell))
+            return(1);
+    return(0);
+}
 
 void mark_locations_array(LISP *x,long n)
-{int j;
- LISP p;
- for(j=0;j<n;++j)
-   {p = x[j];
-    if (looks_pointerp(p))
-      gc_mark(p);}}
+{
+    int j;
+    LISP p;
+    for(j=0;j<n;++j)
+    {
+        p = x[j];
+        if (looks_pointerp(p))
+            gc_mark(p);
+    }
+}
 
 void gc_sweep(void)
-{LISP ptr,end,nfreelist,org;
- long n,k;
- struct user_type_hooks *p;
- end = heap_end;
- n = 0;
- nfreelist = NIL;
- for(k=0;k<nheaps;++k)
-   if (heaps[k])
-     {org = heaps[k];
-      end = org + heap_size;
-      for(ptr=org; ptr < end; ++ptr)
-    if (((*ptr).gc_mark == 0))
-      {switch((*ptr).type)
-         {case tc_free_cell:
-          case tc_cons:
-          case tc_closure:
-          case tc_symbol:
-          case tc_flonum:
-          case tc_subr_0:
-          case tc_subr_1:
-          case tc_subr_2:
-          case tc_subr_2n:
-          case tc_subr_3:
-          case tc_subr_4:
-          case tc_subr_5:
-          case tc_lsubr:
-          case tc_fsubr:
-          case tc_msubr:
+{
+    LISP ptr,end,nfreelist,org;
+    long n,k;
+    struct user_type_hooks *p;
+    end = heap_end;
+    n = 0;
+    nfreelist = NIL;
+    for(k=0;k<nheaps;++k)
+    if (heaps[k])
+    {
+        org = heaps[k];
+        end = org + heap_size;
+        for(ptr=org; ptr < end; ++ptr)
+        if (((*ptr).gc_mark == 0))
+        {
+            switch((*ptr).type)
+            {
+                case tc_free_cell:
+                case tc_cons:
+                case tc_closure:
+                case tc_symbol:
+                case tc_flonum:
+                case tc_subr_0:
+                case tc_subr_1:
+                case tc_subr_2:
+                case tc_subr_2n:
+                case tc_subr_3:
+                case tc_subr_4:
+                case tc_subr_5:
+                case tc_lsubr:
+                case tc_fsubr:
+                case tc_msubr:
         break;
-          default:
-        p = get_user_type_hooks(TYPE(ptr));
-        if (p->gc_free)
-          (*p->gc_free)(ptr);}
-       ++n;
-       (*ptr).type = tc_free_cell;
-       CDR(ptr) = nfreelist;
-       nfreelist = ptr;}
+            default:
+            p = get_user_type_hooks(TYPE(ptr));
+            if (p->gc_free)
+            (*p->gc_free)(ptr);}
+            ++n;
+            (*ptr).type = tc_free_cell;
+            CDR(ptr) = nfreelist;
+            nfreelist = ptr;
+        }
     else
-      (*ptr).gc_mark = 0;}
- gc_cells_collected = n;
- freelist = nfreelist;}
+    (*ptr).gc_mark = 0;
+    }
+    gc_cells_collected = n;
+    freelist = nfreelist;
+}
 
 void gc_kind_check(void)
-{if (gc_kind_copying == 1)
-   err("cannot perform operation with stop-and-copy GC mode. Use -g0\n",
-       NIL);}
+{
+    if (gc_kind_copying == 1)
+    err("cannot perform operation with stop-and-copy GC mode. Use -g0\n",NIL);
+}
 
 LISP user_gc(LISP args)
-{long old_status_flag,flag;
- gc_kind_check();
- flag = no_interrupt(1);
- errjmp_ok = 0;
- old_status_flag = gc_status_flag;
- if NNULLP(args)
-   if NULLP(car(args)) gc_status_flag = 0; else gc_status_flag = 1;
- gc_mark_and_sweep();
- gc_status_flag = old_status_flag;
- errjmp_ok = 1;
- no_interrupt(flag);
- return(NIL);}
+{
+    long old_status_flag,flag;
+    gc_kind_check();
+    flag = no_interrupt(1);
+    errjmp_ok = 0;
+    old_status_flag = gc_status_flag;
+    if NNULLP(args)
+        if NULLP(car(args)) gc_status_flag = 0; else gc_status_flag = 1;
+            gc_mark_and_sweep();
+    gc_status_flag = old_status_flag;
+    errjmp_ok = 1;
+    no_interrupt(flag);
+    return(NIL);
+}
 
 long nactive_heaps(void)
 {long m;

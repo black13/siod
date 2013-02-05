@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libsiod", "libsiod\libsiod.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "unit_test_consiod1", "unit_test_consiod1\unit_test_consiod1.vcxproj", "{8F2016D8-161E-41B3-8A66-B0C20D4AB4E5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "c_exports", "c_exports\c_exports.vcxproj", "{560B8EBE-2828-43A7-A9B1-5081618A6D47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +27,10 @@ Global
 		{8F2016D8-161E-41B3-8A66-B0C20D4AB4E5}.Debug|Win32.Build.0 = Debug|Win32
 		{8F2016D8-161E-41B3-8A66-B0C20D4AB4E5}.Release|Win32.ActiveCfg = Release|Win32
 		{8F2016D8-161E-41B3-8A66-B0C20D4AB4E5}.Release|Win32.Build.0 = Release|Win32
+		{560B8EBE-2828-43A7-A9B1-5081618A6D47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{560B8EBE-2828-43A7-A9B1-5081618A6D47}.Debug|Win32.Build.0 = Debug|Win32
+		{560B8EBE-2828-43A7-A9B1-5081618A6D47}.Release|Win32.ActiveCfg = Release|Win32
+		{560B8EBE-2828-43A7-A9B1-5081618A6D47}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
