@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="md5_8h" kind="file">
+    <compoundname>md5.h</compoundname>
+    <includedby refid="md5_8c" local="yes">md5.c</includedby>
+    <includedby refid="slibu_8c" local="yes">slibu.c</includedby>
+    <innerclass refid="struct_m_d5___c_t_x" prot="public">MD5_CTX</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="md5_8h_1a0dd20350e5f9e20e022b5b9203679041" prot="public" static="no">
+        <name>PROTO_LIST</name>
+        <param><defname>list</defname></param>
+        <initializer>list</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="40" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="md5_8h_1a73204e40637f83518fb695362ea084a4" prot="public" static="no">
+        <type>unsigned char *</type>
+        <definition>typedef unsigned char* POINTER</definition>
+        <argsstring></argsstring>
+        <name>POINTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="28" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="md5_8h_1af5637b45065516a61d381f1891454eec" prot="public" static="no">
+        <type>unsigned short int</type>
+        <definition>typedef unsigned short int UINT2</definition>
+        <argsstring></argsstring>
+        <name>UINT2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="31" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="md5_8h_1acbcd3749ac28f52e756e22d22022cae5" prot="public" static="no">
+        <type>unsigned long int</type>
+        <definition>typedef unsigned long int UINT4</definition>
+        <argsstring></argsstring>
+        <name>UINT4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="37" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8h_1a3f8536333904be01a0565cd032561537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5Init</type>
+        <definition>void MD5Init PROTO_LIST</definition>
+        <argsstring>((MD5_CTX *))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(<ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8h_1a6ab908433e85e4eda03630318a485cd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5Update</type>
+        <definition>void MD5Update PROTO_LIST</definition>
+        <argsstring>((MD5_CTX *, unsigned char *, unsigned int))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(<ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *, unsigned char *, unsigned int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8h_1ac3dec658aefbff68dff6663a1f498abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5Final</type>
+        <definition>void MD5Final PROTO_LIST</definition>
+        <argsstring>((unsigned char[16], MD5_CTX *))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(unsigned char[16], <ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h" line="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>MD5.H<sp/>-<sp/>header<sp/>file<sp/>for<sp/>MD5C.C</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>$Id:<sp/>md5.h,v<sp/>1.1<sp/>1996/10/17<sp/>18:40:18<sp/>gjc<sp/>Exp<sp/>$</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copyright<sp/>(C)<sp/>1991-2,<sp/>RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>Created<sp/>1991.<sp/>All</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">License<sp/>to<sp/>copy<sp/>and<sp/>use<sp/>this<sp/>software<sp/>is<sp/>granted<sp/>provided<sp/>that<sp/>it</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">is<sp/>identified<sp/>as<sp/>the<sp/>&quot;RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Algorithm&quot;<sp/>in<sp/>all<sp/>material<sp/>mentioning<sp/>or<sp/>referencing<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">or<sp/>this<sp/>function.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">License<sp/>is<sp/>also<sp/>granted<sp/>to<sp/>make<sp/>and<sp/>use<sp/>derivative<sp/>works<sp/>provided</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">that<sp/>such<sp/>works<sp/>are<sp/>identified<sp/>as<sp/>&quot;derived<sp/>from<sp/>the<sp/>RSA<sp/>Data</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest<sp/>Algorithm&quot;<sp/>in<sp/>all<sp/>material</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">mentioning<sp/>or<sp/>referencing<sp/>the<sp/>derived<sp/>work.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>makes<sp/>no<sp/>representations<sp/>concerning<sp/>either</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">the<sp/>merchantability<sp/>of<sp/>this<sp/>software<sp/>or<sp/>the<sp/>suitability<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">software<sp/>for<sp/>any<sp/>particular<sp/>purpose.<sp/>It<sp/>is<sp/>provided<sp/>&quot;as<sp/>is&quot;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">without<sp/>express<sp/>or<sp/>implied<sp/>warranty<sp/>of<sp/>any<sp/>kind.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment">These<sp/>notices<sp/>must<sp/>be<sp/>retained<sp/>in<sp/>any<sp/>copies<sp/>of<sp/>any<sp/>part<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">documentation<sp/>and/or<sp/>software.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>POINTER<sp/>defines<sp/>a<sp/>generic<sp/>pointer<sp/>type<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*POINTER;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>UINT2<sp/>defines<sp/>a<sp/>two<sp/>byte<sp/>word<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UINT2;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>UINT4<sp/>defines<sp/>a<sp/>four<sp/>byte<sp/>word<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__alpha</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UINT4;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>UINT4;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROTO_LIST(list)<sp/>list</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MD5<sp/>context.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="struct_m_d5___c_t_x" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>UINT4<sp/>state[4];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>state<sp/>(ABCD)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>UINT4<sp/>count[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>bits,<sp/>modulo<sp/>2^64<sp/>(lsb<sp/>first)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[64];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>input<sp/>buffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Init<sp/>PROTO_LIST<sp/>((<ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*));</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Update<sp/>PROTO_LIST</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>((<ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Final<sp/>PROTO_LIST<sp/>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>[16],<sp/><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.h"/>
+  </compounddef>
+</doxygen>

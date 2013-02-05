@@ -1,0 +1,984 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="md5_8c" kind="file">
+    <compoundname>md5.c</compoundname>
+    <includes refid="md5_8h" local="yes">md5.h</includes>
+    <incdepgraph>
+      <node id="0">
+        <label>md5.c</label>
+        <link refid="md5.c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>md5.h</label>
+        <link refid="md5_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="md5_8c_1a51398c0e5541164ad4d6615880073305" prot="public" static="no">
+        <name>S11</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="33" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a1ec499cd0e54ecc28c2ac2afea5b038e" prot="public" static="no">
+        <name>S12</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="34" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1aaeec90429105fb54d853dd4fc7027a54" prot="public" static="no">
+        <name>S13</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="35" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a78342b0ccde2ed12fdf19a113cc266cf" prot="public" static="no">
+        <name>S14</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="36" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ab6d5354f647a0e7592a1f051fc8377b2" prot="public" static="no">
+        <name>S21</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="37" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1addad30455da936bc1879ee9c72b46d59" prot="public" static="no">
+        <name>S22</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="38" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a6321a8b29628936f76e9e78cf5bda95f" prot="public" static="no">
+        <name>S23</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="39" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a0c09eb77d30a0d5f9154914147b86c20" prot="public" static="no">
+        <name>S24</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="40" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1aef26590f8a880ee6f4a158168defcd89" prot="public" static="no">
+        <name>S31</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="41" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a1d512424dd8a91e0a5bcc98563f33914" prot="public" static="no">
+        <name>S32</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="42" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a1c854214533f6220e859b0063196abb3" prot="public" static="no">
+        <name>S33</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="43" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1af6472be1d535970afee8e5266a74aa07" prot="public" static="no">
+        <name>S34</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="44" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ab674ba129e588da55d1d494e1cf3c15e" prot="public" static="no">
+        <name>S41</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="45" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a268ef1a49114a94b931cc6b313e3cd1b" prot="public" static="no">
+        <name>S42</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="46" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a5aaa7121f39650d472746942ca68f959" prot="public" static="no">
+        <name>S43</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="47" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a6a3989af72b55d169bd73a66f8620aae" prot="public" static="no">
+        <name>S44</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="48" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a96d73bbd7af15cb1fc38c3f4a3bd82e9" prot="public" static="no">
+        <name>F</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>(((x) &amp; (y)) | ((~x) &amp; (z)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="66" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ad96b7cf3182ce2ba85e5a7a93b12c441" prot="public" static="no">
+        <name>G</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>(((x) &amp; (z)) | ((y) &amp; (~z)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="67" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ae42219072d798876e6b08e6b78614ff6" prot="public" static="no">
+        <name>H</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((x) ^ (y) ^ (z))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="68" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ac0eafdc9ee161b71e7af98af736952fd" prot="public" static="no">
+        <name>I</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>((y) ^ ((x) | (~z)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="69" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a7417fd4e875360c0533fa5b412cdab49" prot="public" static="no">
+        <name>ROTATE_LEFT</name>
+        <param><defname>x</defname></param>
+        <param><defname>n</defname></param>
+        <initializer>(((x) &lt;&lt; (n)) | ((x) &gt;&gt; (32-(n))))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="73" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a0a143972cb6c4fe16f0ffa8a3d41ebf3" prot="public" static="no">
+        <name>FF</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>ac</defname></param>
+        <initializer>{ \
+ (a) += F ((b), (c), (d)) + (x) + (UINT4)(ac); \
+ (a) = ROTATE_LEFT ((a), (s)); \
+ (a) += (b); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="82" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a685f32faa2a66e743850b990a13b8bfa" prot="public" static="no">
+        <name>GG</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>ac</defname></param>
+        <initializer>{ \
+ (a) += G ((b), (c), (d)) + (x) + (UINT4)(ac); \
+ (a) = ROTATE_LEFT ((a), (s)); \
+ (a) += (b); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="87" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1a8b9f1c4778df01ef970b87dbe5541dc5" prot="public" static="no">
+        <name>HH</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>ac</defname></param>
+        <initializer>{ \
+ (a) += H ((b), (c), (d)) + (x) + (UINT4)(ac); \
+ (a) = ROTATE_LEFT ((a), (s)); \
+ (a) += (b); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="92" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="md5_8c_1ad26626e5efb37b2dadef4e88e35e4329" prot="public" static="no">
+        <name>II</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <param><defname>c</defname></param>
+        <param><defname>d</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>s</defname></param>
+        <param><defname>ac</defname></param>
+        <initializer>{ \
+ (a) += I ((b), (c), (d)) + (x) + (UINT4)(ac); \
+ (a) = ROTATE_LEFT ((a), (s)); \
+ (a) += (b); \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="97" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="md5_8c_1aee6f420120b0fbc0fb096cb61655cec4" prot="public" static="yes" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char PADDING[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>PADDING</name>
+        <initializer>= {
+  0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="62" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="md5_8c_1a1b045bcb12b9153aa8bd1f2e33fd75ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5Transform</type>
+        <definition>static void MD5Transform PROTO_LIST</definition>
+        <argsstring>((UINT4[4], unsigned char[64]))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(UINT4[4], unsigned char[64])</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="50"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a655750c8f884bd010654b1d8cec9ac09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void Encode</type>
+        <definition>static void Encode PROTO_LIST</definition>
+        <argsstring>((unsigned char *, UINT4 *, unsigned int))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(unsigned char *, UINT4 *, unsigned int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="52"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a90bc2105e525ca736a66f223c790bd26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void Decode</type>
+        <definition>static void Decode PROTO_LIST</definition>
+        <argsstring>((UINT4 *, unsigned char *, unsigned int))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(UINT4 *, unsigned char *, unsigned int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="54"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a607b44065af5695cf457e95c8b999538" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5_memcpy</type>
+        <definition>static void MD5_memcpy PROTO_LIST</definition>
+        <argsstring>((POINTER, POINTER, unsigned int))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(POINTER, POINTER, unsigned int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="55"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1aa8c9ae888a55e7f901321736818c3dc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void MD5_memset</type>
+        <definition>static void MD5_memset PROTO_LIST</definition>
+        <argsstring>((POINTER, int, unsigned int))</argsstring>
+        <name>PROTO_LIST</name>
+        <param>
+          <type>(POINTER, int, unsigned int)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a08e47999152d737f33fda2b8729c4f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5Init</definition>
+        <argsstring>(MD5_CTX *context)</argsstring>
+        <name>MD5Init</name>
+        <param>
+          <type><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="103" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="101" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1aa5b3e14ee3b69e0c7e10d69c9e538b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5Update</definition>
+        <argsstring>(MD5_CTX *context, unsigned char *input, unsigned int inputLen)</argsstring>
+        <name>MD5Update</name>
+        <param>
+          <type><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>inputLen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="121" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="117" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a6265921688d4d2f4fb2456dfe7a2828a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MD5Final</definition>
+        <argsstring>(digest, MD5_CTX *context)</argsstring>
+        <name>MD5Final</name>
+        <param>
+          <type>digest</type>
+        </param>
+        <param>
+          <type><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref> *</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="163" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="160" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a280c182a0ef65aaa657a98248dd2c2f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MD5Transform</definition>
+        <argsstring>(state, block)</argsstring>
+        <name>MD5Transform</name>
+        <param>
+          <type>state</type>
+        </param>
+        <param>
+          <type>block</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="192" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="189" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a3b3905decd3db74f3f6b43b295f59953" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Encode</definition>
+        <argsstring>(unsigned char *output, UINT4 *input, unsigned int len)</argsstring>
+        <name>Encode</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>UINT4 *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="287" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="283" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a6a1f18df52c587067b5c228312af2742" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Decode</definition>
+        <argsstring>(UINT4 *output, unsigned char *input, unsigned int len)</argsstring>
+        <name>Decode</name>
+        <param>
+          <type>UINT4 *</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="305" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="301" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a4fcbd98768fb2adc10e89c8bab8999ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MD5_memcpy</definition>
+        <argsstring>(POINTER output, POINTER input, unsigned int len)</argsstring>
+        <name>MD5_memcpy</name>
+        <param>
+          <type>POINTER</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>POINTER</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="320" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="316" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="md5_8c_1a56cbec819bc957c869d767bc6b743e00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void MD5_memset</definition>
+        <argsstring>(POINTER output, int value, unsigned int len)</argsstring>
+        <name>MD5_memset</name>
+        <param>
+          <type>POINTER</type>
+          <declname>output</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" line="334" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c" bodystart="330" bodyend="339"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>MD5C.C<sp/>-<sp/>RSA<sp/>Data<sp/>Security,<sp/>Inc.,<sp/>MD5<sp/>message-digest<sp/>algorithm</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Copyright<sp/>(C)<sp/>1991-2,<sp/>RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>Created<sp/>1991.<sp/>All</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">License<sp/>to<sp/>copy<sp/>and<sp/>use<sp/>this<sp/>software<sp/>is<sp/>granted<sp/>provided<sp/>that<sp/>it</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">is<sp/>identified<sp/>as<sp/>the<sp/>&quot;RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">Algorithm&quot;<sp/>in<sp/>all<sp/>material<sp/>mentioning<sp/>or<sp/>referencing<sp/>this<sp/>software</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">or<sp/>this<sp/>function.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">License<sp/>is<sp/>also<sp/>granted<sp/>to<sp/>make<sp/>and<sp/>use<sp/>derivative<sp/>works<sp/>provided</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">that<sp/>such<sp/>works<sp/>are<sp/>identified<sp/>as<sp/>&quot;derived<sp/>from<sp/>the<sp/>RSA<sp/>Data</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">Security,<sp/>Inc.<sp/>MD5<sp/>Message-Digest<sp/>Algorithm&quot;<sp/>in<sp/>all<sp/>material</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">mentioning<sp/>or<sp/>referencing<sp/>the<sp/>derived<sp/>work.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">RSA<sp/>Data<sp/>Security,<sp/>Inc.<sp/>makes<sp/>no<sp/>representations<sp/>concerning<sp/>either</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">the<sp/>merchantability<sp/>of<sp/>this<sp/>software<sp/>or<sp/>the<sp/>suitability<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">software<sp/>for<sp/>any<sp/>particular<sp/>purpose.<sp/>It<sp/>is<sp/>provided<sp/>&quot;as<sp/>is&quot;</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">without<sp/>express<sp/>or<sp/>implied<sp/>warranty<sp/>of<sp/>any<sp/>kind.</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment">These<sp/>notices<sp/>must<sp/>be<sp/>retained<sp/>in<sp/>any<sp/>copies<sp/>of<sp/>any<sp/>part<sp/>of<sp/>this</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">documentation<sp/>and/or<sp/>software.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning(<sp/>disable<sp/>:<sp/>4996<sp/>)</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;md5.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constants<sp/>for<sp/>MD5Transform<sp/>routine.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S11<sp/>7</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S12<sp/>12</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S13<sp/>17</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S14<sp/>22</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S21<sp/>5</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S22<sp/>9</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S23<sp/>14</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S24<sp/>20</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S31<sp/>4</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S32<sp/>11</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S33<sp/>16</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S34<sp/>23</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S41<sp/>6</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S42<sp/>10</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S43<sp/>15</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>S44<sp/>21</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Transform<sp/>PROTO_LIST<sp/>((UINT4<sp/>[4],<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>[64]));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Encode<sp/>PROTO_LIST</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/>UINT4<sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Decode<sp/>PROTO_LIST</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>((UINT4<sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5_memcpy<sp/>PROTO_LIST<sp/>((POINTER,<sp/>POINTER,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5_memset<sp/>PROTO_LIST<sp/>((POINTER,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>PADDING[64]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>0x80,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0,<sp/>0</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>F,<sp/>G,<sp/>H<sp/>and<sp/>I<sp/>are<sp/>basic<sp/>MD5<sp/>functions.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>F(x,<sp/>y,<sp/>z)<sp/>(((x)<sp/>&amp;<sp/>(y))<sp/>|<sp/>((~x)<sp/>&amp;<sp/>(z)))</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>G(x,<sp/>y,<sp/>z)<sp/>(((x)<sp/>&amp;<sp/>(z))<sp/>|<sp/>((y)<sp/>&amp;<sp/>(~z)))</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>H(x,<sp/>y,<sp/>z)<sp/>((x)<sp/>^<sp/>(y)<sp/>^<sp/>(z))</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I(x,<sp/>y,<sp/>z)<sp/>((y)<sp/>^<sp/>((x)<sp/>|<sp/>(~z)))</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ROTATE_LEFT<sp/>rotates<sp/>x<sp/>left<sp/>n<sp/>bits.</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ROTATE_LEFT(x,<sp/>n)<sp/>(((x)<sp/>&lt;&lt;<sp/>(n))<sp/>|<sp/>((x)<sp/>&gt;&gt;<sp/>(32-(n))))</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>FF,<sp/>GG,<sp/>HH,<sp/>and<sp/>II<sp/>transformations<sp/>for<sp/>rounds<sp/>1,<sp/>2,<sp/>3,<sp/>and<sp/>4.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment">Rotation<sp/>is<sp/>separate<sp/>from<sp/>addition<sp/>to<sp/>prevent<sp/>recomputation.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FF(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x,<sp/>s,<sp/>ac)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>F<sp/>((b),<sp/>(c),<sp/>(d))<sp/>+<sp/>(x)<sp/>+<sp/>(UINT4)(ac);<sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/>(a)<sp/>=<sp/>ROTATE_LEFT<sp/>((a),<sp/>(s));<sp/>\</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>(b);<sp/>\</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GG(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x,<sp/>s,<sp/>ac)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>G<sp/>((b),<sp/>(c),<sp/>(d))<sp/>+<sp/>(x)<sp/>+<sp/>(UINT4)(ac);<sp/>\</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"><sp/>(a)<sp/>=<sp/>ROTATE_LEFT<sp/>((a),<sp/>(s));<sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>(b);<sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HH(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x,<sp/>s,<sp/>ac)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>H<sp/>((b),<sp/>(c),<sp/>(d))<sp/>+<sp/>(x)<sp/>+<sp/>(UINT4)(ac);<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/>(a)<sp/>=<sp/>ROTATE_LEFT<sp/>((a),<sp/>(s));<sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>(b);<sp/>\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>II(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x,<sp/>s,<sp/>ac)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>I<sp/>((b),<sp/>(c),<sp/>(d))<sp/>+<sp/>(x)<sp/>+<sp/>(UINT4)(ac);<sp/>\</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"><sp/>(a)<sp/>=<sp/>ROTATE_LEFT<sp/>((a),<sp/>(s));<sp/>\</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"><sp/>(a)<sp/>+=<sp/>(b);<sp/>\</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MD5<sp/>initialization.<sp/>Begins<sp/>an<sp/>MD5<sp/>operation,<sp/>writing<sp/>a<sp/>new<sp/>context.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Init<sp/>(context)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*context;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>context-&gt;count[0]<sp/>=<sp/>context-&gt;count[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Load<sp/>magic<sp/>initialization<sp/>constants.</highlight></codeline>
+<codeline lineno="106"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>context-&gt;state[0]<sp/>=<sp/>0x67452301;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>context-&gt;state[1]<sp/>=<sp/>0xefcdab89;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>context-&gt;state[2]<sp/>=<sp/>0x98badcfe;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>context-&gt;state[3]<sp/>=<sp/>0x10325476;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MD5<sp/>block<sp/>update<sp/>operation.<sp/>Continues<sp/>an<sp/>MD5<sp/>message-digest</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/>operation,<sp/>processing<sp/>another<sp/>message<sp/>block,<sp/>and<sp/>updating<sp/>the</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/>context.</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Update<sp/>(context,<sp/>input,<sp/>inputLen)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*context;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*input;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>input<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputLen;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>length<sp/>of<sp/>input<sp/>block<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>index,<sp/>partLen;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Compute<sp/>number<sp/>of<sp/>bytes<sp/>mod<sp/>64<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>index<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)((context-&gt;count[0]<sp/>&gt;&gt;<sp/>3)<sp/>&amp;<sp/>0x3F);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Update<sp/>number<sp/>of<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((context-&gt;count[0]<sp/>+=<sp/>((UINT4)inputLen<sp/>&lt;&lt;<sp/>3))</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/>&lt;<sp/>((UINT4)inputLen<sp/>&lt;&lt;<sp/>3))</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/>context-&gt;count[1]++;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>context-&gt;count[1]<sp/>+=<sp/>((UINT4)inputLen<sp/>&gt;&gt;<sp/>29);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>partLen<sp/>=<sp/>64<sp/>-<sp/>index;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Transform<sp/>as<sp/>many<sp/>times<sp/>as<sp/>possible.</highlight></codeline>
+<codeline lineno="137"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inputLen<sp/>&gt;=<sp/>partLen)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/>MD5_memcpy</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/>((POINTER)&amp;context-&gt;buffer[index],<sp/>(POINTER)input,<sp/>partLen);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/>MD5Transform<sp/>(context-&gt;state,<sp/>context-&gt;buffer);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>partLen;<sp/>i<sp/>+<sp/>63<sp/>&lt;<sp/>inputLen;<sp/>i<sp/>+=<sp/>64)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/>MD5Transform<sp/>(context-&gt;state,<sp/>&amp;input[i]);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/>index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>remaining<sp/>input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>MD5_memcpy</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/>((POINTER)&amp;context-&gt;buffer[index],<sp/>(POINTER)&amp;input[i],</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>inputLen-i);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MD5<sp/>finalization.<sp/>Ends<sp/>an<sp/>MD5<sp/>message-digest<sp/>operation,<sp/>writing<sp/>the</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/>the<sp/>message<sp/>digest<sp/>and<sp/>zeroizing<sp/>the<sp/>context.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Final<sp/>(digest,<sp/>context)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">unsigned<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>digest[16];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>message<sp/>digest<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><ref refid="struct_m_d5___c_t_x" kindref="compound">MD5_CTX</ref><sp/>*context;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>context<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bits[8];</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/>padLen;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Save<sp/>number<sp/>of<sp/>bits<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>Encode<sp/>(bits,<sp/>context-&gt;count,<sp/>8);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pad<sp/>out<sp/>to<sp/>56<sp/>mod<sp/>64.</highlight></codeline>
+<codeline lineno="171"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>index<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int)((context-&gt;count[0]<sp/>&gt;&gt;<sp/>3)<sp/>&amp;<sp/>0x3f);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>padLen<sp/>=<sp/>(index<sp/>&lt;<sp/>56)<sp/>?<sp/>(56<sp/>-<sp/>index)<sp/>:<sp/>(120<sp/>-<sp/>index);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>MD5Update<sp/>(context,<sp/>PADDING,<sp/>padLen);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Append<sp/>length<sp/>(before<sp/>padding)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>MD5Update<sp/>(context,<sp/>bits,<sp/>8);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Store<sp/>state<sp/>in<sp/>digest<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>Encode<sp/>(digest,<sp/>context-&gt;state,<sp/>16);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Zeroize<sp/>sensitive<sp/>information.</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>MD5_memset<sp/>((POINTER)context,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(*context));</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MD5<sp/>basic<sp/>transformation.<sp/>Transforms<sp/>state<sp/>based<sp/>on<sp/>block.</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5Transform<sp/>(state,<sp/>block)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">UINT4<sp/>state[4];</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>block[64];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>UINT4<sp/>a<sp/>=<sp/>state[0],<sp/>b<sp/>=<sp/>state[1],<sp/>c<sp/>=<sp/>state[2],<sp/>d<sp/>=<sp/>state[3],<sp/>x[16];</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>Decode<sp/>(x,<sp/>block,<sp/>64);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>FF<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>0],<sp/>S11,<sp/>0xd76aa478);<sp/></highlight><highlight class="comment">/*<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>FF<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>1],<sp/>S12,<sp/>0xe8c7b756);<sp/></highlight><highlight class="comment">/*<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>FF<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>2],<sp/>S13,<sp/>0x242070db);<sp/></highlight><highlight class="comment">/*<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>FF<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>3],<sp/>S14,<sp/>0xc1bdceee);<sp/></highlight><highlight class="comment">/*<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>FF<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>4],<sp/>S11,<sp/>0xf57c0faf);<sp/></highlight><highlight class="comment">/*<sp/>5<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>FF<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>5],<sp/>S12,<sp/>0x4787c62a);<sp/></highlight><highlight class="comment">/*<sp/>6<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>FF<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>6],<sp/>S13,<sp/>0xa8304613);<sp/></highlight><highlight class="comment">/*<sp/>7<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>FF<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>7],<sp/>S14,<sp/>0xfd469501);<sp/></highlight><highlight class="comment">/*<sp/>8<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>FF<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>8],<sp/>S11,<sp/>0x698098d8);<sp/></highlight><highlight class="comment">/*<sp/>9<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>FF<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>9],<sp/>S12,<sp/>0x8b44f7af);<sp/></highlight><highlight class="comment">/*<sp/>10<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>FF<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[10],<sp/>S13,<sp/>0xffff5bb1);<sp/></highlight><highlight class="comment">/*<sp/>11<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>FF<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[11],<sp/>S14,<sp/>0x895cd7be);<sp/></highlight><highlight class="comment">/*<sp/>12<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>FF<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[12],<sp/>S11,<sp/>0x6b901122);<sp/></highlight><highlight class="comment">/*<sp/>13<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>FF<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[13],<sp/>S12,<sp/>0xfd987193);<sp/></highlight><highlight class="comment">/*<sp/>14<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>FF<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[14],<sp/>S13,<sp/>0xa679438e);<sp/></highlight><highlight class="comment">/*<sp/>15<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>FF<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[15],<sp/>S14,<sp/>0x49b40821);<sp/></highlight><highlight class="comment">/*<sp/>16<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>GG<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>1],<sp/>S21,<sp/>0xf61e2562);<sp/></highlight><highlight class="comment">/*<sp/>17<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>GG<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>6],<sp/>S22,<sp/>0xc040b340);<sp/></highlight><highlight class="comment">/*<sp/>18<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>GG<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[11],<sp/>S23,<sp/>0x265e5a51);<sp/></highlight><highlight class="comment">/*<sp/>19<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>GG<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>0],<sp/>S24,<sp/>0xe9b6c7aa);<sp/></highlight><highlight class="comment">/*<sp/>20<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>GG<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>5],<sp/>S21,<sp/>0xd62f105d);<sp/></highlight><highlight class="comment">/*<sp/>21<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>GG<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[10],<sp/>S22,<sp/><sp/>0x2441453);<sp/></highlight><highlight class="comment">/*<sp/>22<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>GG<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[15],<sp/>S23,<sp/>0xd8a1e681);<sp/></highlight><highlight class="comment">/*<sp/>23<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>GG<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>4],<sp/>S24,<sp/>0xe7d3fbc8);<sp/></highlight><highlight class="comment">/*<sp/>24<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>GG<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>9],<sp/>S21,<sp/>0x21e1cde6);<sp/></highlight><highlight class="comment">/*<sp/>25<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>GG<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[14],<sp/>S22,<sp/>0xc33707d6);<sp/></highlight><highlight class="comment">/*<sp/>26<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>GG<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>3],<sp/>S23,<sp/>0xf4d50d87);<sp/></highlight><highlight class="comment">/*<sp/>27<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>GG<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>8],<sp/>S24,<sp/>0x455a14ed);<sp/></highlight><highlight class="comment">/*<sp/>28<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>GG<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[13],<sp/>S21,<sp/>0xa9e3e905);<sp/></highlight><highlight class="comment">/*<sp/>29<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>GG<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>2],<sp/>S22,<sp/>0xfcefa3f8);<sp/></highlight><highlight class="comment">/*<sp/>30<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>GG<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>7],<sp/>S23,<sp/>0x676f02d9);<sp/></highlight><highlight class="comment">/*<sp/>31<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>GG<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[12],<sp/>S24,<sp/>0x8d2a4c8a);<sp/></highlight><highlight class="comment">/*<sp/>32<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>HH<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>5],<sp/>S31,<sp/>0xfffa3942);<sp/></highlight><highlight class="comment">/*<sp/>33<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>HH<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>8],<sp/>S32,<sp/>0x8771f681);<sp/></highlight><highlight class="comment">/*<sp/>34<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>HH<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[11],<sp/>S33,<sp/>0x6d9d6122);<sp/></highlight><highlight class="comment">/*<sp/>35<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>HH<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[14],<sp/>S34,<sp/>0xfde5380c);<sp/></highlight><highlight class="comment">/*<sp/>36<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>HH<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>1],<sp/>S31,<sp/>0xa4beea44);<sp/></highlight><highlight class="comment">/*<sp/>37<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>HH<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>4],<sp/>S32,<sp/>0x4bdecfa9);<sp/></highlight><highlight class="comment">/*<sp/>38<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>HH<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>7],<sp/>S33,<sp/>0xf6bb4b60);<sp/></highlight><highlight class="comment">/*<sp/>39<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>HH<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[10],<sp/>S34,<sp/>0xbebfbc70);<sp/></highlight><highlight class="comment">/*<sp/>40<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>HH<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[13],<sp/>S31,<sp/>0x289b7ec6);<sp/></highlight><highlight class="comment">/*<sp/>41<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>HH<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>0],<sp/>S32,<sp/>0xeaa127fa);<sp/></highlight><highlight class="comment">/*<sp/>42<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>HH<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>3],<sp/>S33,<sp/>0xd4ef3085);<sp/></highlight><highlight class="comment">/*<sp/>43<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>HH<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>6],<sp/>S34,<sp/><sp/>0x4881d05);<sp/></highlight><highlight class="comment">/*<sp/>44<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>HH<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>9],<sp/>S31,<sp/>0xd9d4d039);<sp/></highlight><highlight class="comment">/*<sp/>45<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>HH<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[12],<sp/>S32,<sp/>0xe6db99e5);<sp/></highlight><highlight class="comment">/*<sp/>46<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>HH<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[15],<sp/>S33,<sp/>0x1fa27cf8);<sp/></highlight><highlight class="comment">/*<sp/>47<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>HH<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>2],<sp/>S34,<sp/>0xc4ac5665);<sp/></highlight><highlight class="comment">/*<sp/>48<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Round<sp/>4<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>II<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>0],<sp/>S41,<sp/>0xf4292244);<sp/></highlight><highlight class="comment">/*<sp/>49<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>II<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>7],<sp/>S42,<sp/>0x432aff97);<sp/></highlight><highlight class="comment">/*<sp/>50<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>II<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[14],<sp/>S43,<sp/>0xab9423a7);<sp/></highlight><highlight class="comment">/*<sp/>51<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>II<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>5],<sp/>S44,<sp/>0xfc93a039);<sp/></highlight><highlight class="comment">/*<sp/>52<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>II<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[12],<sp/>S41,<sp/>0x655b59c3);<sp/></highlight><highlight class="comment">/*<sp/>53<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>II<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[<sp/>3],<sp/>S42,<sp/>0x8f0ccc92);<sp/></highlight><highlight class="comment">/*<sp/>54<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>II<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[10],<sp/>S43,<sp/>0xffeff47d);<sp/></highlight><highlight class="comment">/*<sp/>55<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>II<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>1],<sp/>S44,<sp/>0x85845dd1);<sp/></highlight><highlight class="comment">/*<sp/>56<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>II<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>8],<sp/>S41,<sp/>0x6fa87e4f);<sp/></highlight><highlight class="comment">/*<sp/>57<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>II<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[15],<sp/>S42,<sp/>0xfe2ce6e0);<sp/></highlight><highlight class="comment">/*<sp/>58<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/>II<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>6],<sp/>S43,<sp/>0xa3014314);<sp/></highlight><highlight class="comment">/*<sp/>59<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>II<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[13],<sp/>S44,<sp/>0x4e0811a1);<sp/></highlight><highlight class="comment">/*<sp/>60<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/>II<sp/>(a,<sp/>b,<sp/>c,<sp/>d,<sp/>x[<sp/>4],<sp/>S41,<sp/>0xf7537e82);<sp/></highlight><highlight class="comment">/*<sp/>61<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>II<sp/>(d,<sp/>a,<sp/>b,<sp/>c,<sp/>x[11],<sp/>S42,<sp/>0xbd3af235);<sp/></highlight><highlight class="comment">/*<sp/>62<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>II<sp/>(c,<sp/>d,<sp/>a,<sp/>b,<sp/>x[<sp/>2],<sp/>S43,<sp/>0x2ad7d2bb);<sp/></highlight><highlight class="comment">/*<sp/>63<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/>II<sp/>(b,<sp/>c,<sp/>d,<sp/>a,<sp/>x[<sp/>9],<sp/>S44,<sp/>0xeb86d391);<sp/></highlight><highlight class="comment">/*<sp/>64<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/>state[0]<sp/>+=<sp/>a;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>state[1]<sp/>+=<sp/>b;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/>state[2]<sp/>+=<sp/>c;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>state[3]<sp/>+=<sp/>d;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Zeroize<sp/>sensitive<sp/>information.</highlight></codeline>
+<codeline lineno="275"><highlight class="comment"></highlight></codeline>
+<codeline lineno="276"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/>MD5_memset<sp/>((POINTER)x,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(x));</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Encodes<sp/>input<sp/>(UINT4)<sp/>into<sp/>output<sp/>(unsigned<sp/>char).<sp/>Assumes<sp/>len<sp/>is</highlight></codeline>
+<codeline lineno="281"><highlight class="comment"><sp/><sp/>a<sp/>multiple<sp/>of<sp/>4.</highlight></codeline>
+<codeline lineno="282"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Encode<sp/>(output,<sp/>input,<sp/>len)</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">unsigned<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*output;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">UINT4<sp/>*input;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>len;<sp/>i++,<sp/>j<sp/>+=<sp/>4)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/>output[j]<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)(input[i]<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/>output[j+1]<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)((input[i]<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/>output[j+2]<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)((input[i]<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/>output[j+3]<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)((input[i]<sp/>&gt;&gt;<sp/>24)<sp/>&amp;<sp/>0xff);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Decodes<sp/>input<sp/>(unsigned<sp/>char)<sp/>into<sp/>output<sp/>(UINT4).<sp/>Assumes<sp/>len<sp/>is</highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/><sp/>a<sp/>multiple<sp/>of<sp/>4.</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Decode<sp/>(output,<sp/>input,<sp/>len)</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">UINT4<sp/>*output;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*input;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>j;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>len;<sp/>i++,<sp/>j<sp/>+=<sp/>4)</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/>output[i]<sp/>=<sp/>((UINT4)input[j])<sp/>|<sp/>(((UINT4)input[j+1])<sp/>&lt;&lt;<sp/>8)<sp/>|</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/>(((UINT4)input[j+2])<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(((UINT4)input[j+3])<sp/>&lt;&lt;<sp/>24);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Note:<sp/>Replace<sp/>&quot;for<sp/>loop&quot;<sp/>with<sp/>standard<sp/>memcpy<sp/>if<sp/>possible.</highlight></codeline>
+<codeline lineno="314"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5_memcpy<sp/>(output,<sp/>input,<sp/>len)</highlight></codeline>
+<codeline lineno="317"><highlight class="normal">POINTER<sp/>output;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal">POINTER<sp/>input;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/>output[i]<sp/>=<sp/>input[i];</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Note:<sp/>Replace<sp/>&quot;for<sp/>loop&quot;<sp/>with<sp/>standard<sp/>memset<sp/>if<sp/>possible.</highlight></codeline>
+<codeline lineno="329"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MD5_memset<sp/>(output,<sp/>value,<sp/>len)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal">POINTER<sp/>output;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)output)[i]<sp/>=<sp/>(char)value;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/josburn/Documents/programming/siod/libsiod/md5.c"/>
+  </compounddef>
+</doxygen>

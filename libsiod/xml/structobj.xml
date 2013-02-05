@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="structobj" kind="struct" prot="public">
+    <compoundname>obj</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structobj_1a6ab58ba03b8c1d5c66e6125d9ee1e018" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short gc_mark</definition>
+        <argsstring></argsstring>
+        <name>gc_mark</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="12" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1acd579dfd50a9ea905ca697ed8707bf3b" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="13" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a978eb5859f110dfaaea622825e773546" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *</type>
+        <definition>struct obj* car</definition>
+        <argsstring></argsstring>
+        <name>car</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="14" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1ad9dd126ad0ca7117d0029461ab58b0c9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *</type>
+        <definition>struct obj* cdr</definition>
+        <argsstring></argsstring>
+        <name>cdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="15" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a2163c3071abc17d31a69dabcf1b2c181" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@1</type>
+        <definition>struct obj::@0::@1  cons</definition>
+        <argsstring></argsstring>
+        <name>cons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a833926f2a6c6f14c5a31538b5823936a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="16" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1ac89e7fe9f6f35f2c3b13a7cf67da46bb" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@2</type>
+        <definition>struct obj::@0::@2  flonum</definition>
+        <argsstring></argsstring>
+        <name>flonum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a277430f8b1d8fbc4f488b55e2d0efd77" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* pname</definition>
+        <argsstring></argsstring>
+        <name>pname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="17" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a56932cfca68772427f20e10959ed5810" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *</type>
+        <definition>struct obj* vcell</definition>
+        <argsstring></argsstring>
+        <name>vcell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="18" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1ad7a4bc1c96560cde31fc83b65a579147" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@3</type>
+        <definition>struct obj::@0::@3  symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a5ac083a645d964373f022d03df4849c8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="19" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a615a31167cc2850b8be5cd357403c429" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *(*</type>
+        <definition>struct obj*(* f)(void *,...)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="20" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a115f17dbe3c12d53c4cce3f0560e5f69" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@4</type>
+        <definition>struct obj::@0::@4  subr0</definition>
+        <argsstring></argsstring>
+        <name>subr0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1abfea4b0e1ad88d2701de76f38fc8270e" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@5</type>
+        <definition>struct obj::@0::@5  subr1</definition>
+        <argsstring></argsstring>
+        <name>subr1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1acaecf4754d4e1b350e8348646d028884" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@6</type>
+        <definition>struct obj::@0::@6  subr2</definition>
+        <argsstring></argsstring>
+        <name>subr2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a0a184467f850249442450f19f9d4a309" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@7</type>
+        <definition>struct obj::@0::@7  subr3</definition>
+        <argsstring></argsstring>
+        <name>subr3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="27"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1acc1521009d41b94fa208624a36fd1e96" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@8</type>
+        <definition>struct obj::@0::@8  subr4</definition>
+        <argsstring></argsstring>
+        <name>subr4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a4b9573599ed2fb72f1468484f503900a" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@9</type>
+        <definition>struct obj::@0::@9  subr5</definition>
+        <argsstring></argsstring>
+        <name>subr5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a1dc836c133ba6492daad326cb4c99c00" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@10</type>
+        <definition>struct obj::@0::@10  subrm</definition>
+        <argsstring></argsstring>
+        <name>subrm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a6a4bc6c80a806bd9b12fa3a1f7a30b41" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@11</type>
+        <definition>struct obj::@0::@11  subr</definition>
+        <argsstring></argsstring>
+        <name>subr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="39"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1ac0e1e5b77370e84d73273aa6ee561fde" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *</type>
+        <definition>struct obj* env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="40" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a0009116eb376765213d6c950a2cd127f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> *</type>
+        <definition>struct obj* code</definition>
+        <argsstring></argsstring>
+        <name>code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="41" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a963d05e321b07d535e02b7f5746a47ad" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@12</type>
+        <definition>struct obj::@0::@12  closure</definition>
+        <argsstring></argsstring>
+        <name>closure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a9f896a7e44ca992cb79dc4e897c47c74" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long dim</definition>
+        <argsstring></argsstring>
+        <name>dim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="42" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a8e9fe2db9aeb3b877be14b9e79ccfad1" prot="public" static="no" mutable="no">
+        <type>long *</type>
+        <definition>long* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="43" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1aa674a07fb34923fe7f238c377080d4b5" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@13</type>
+        <definition>struct obj::@0::@13  long_array</definition>
+        <argsstring></argsstring>
+        <name>long_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="43"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a23436a7a2b44939627b59df11be7ad75" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="45" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1aee400cb86f76c3cc9db31554f8759b2d" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@14</type>
+        <definition>struct obj::@0::@14  double_array</definition>
+        <argsstring></argsstring>
+        <name>double_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a91a70b77df95bd8b0830b49a094c2acb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="47" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a89b594fd3c24f1fcf50aaab398755e73" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@15</type>
+        <definition>struct obj::@0::@15  string</definition>
+        <argsstring></argsstring>
+        <name>string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1ac24cea2bfcc927fd29bc74d1086707d8" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="49" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a5cf15fd4ea9417d9dc35a49cea615d53" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@16</type>
+        <definition>struct obj::@0::@16  u_string</definition>
+        <argsstring></argsstring>
+        <name>u_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a0fd479ef40780a7f006cac3ea9475e75" prot="public" static="no" mutable="no">
+        <type>signed char *</type>
+        <definition>signed char* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="51" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a097112762279e1b4e8c8b8150970fa57" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@17</type>
+        <definition>struct obj::@0::@17  s_string</definition>
+        <argsstring></argsstring>
+        <name>s_string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a897836203ebadbc206d67e460b4c9ff7" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structobj" kindref="compound">obj</ref> **</type>
+        <definition>struct obj** data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="53" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a365c71cc4d624ee9d521fd8363ae1f29" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@18</type>
+        <definition>struct obj::@0::@18  lisp_array</definition>
+        <argsstring></argsstring>
+        <name>lisp_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="53"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a3efb0e1a16208deecbd84c15401f7cf8" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="54" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a2ed820d235dd4d4df2bc2ea9799ebd03" prot="public" static="no" mutable="no">
+        <type>struct obj::@0::@19</type>
+        <definition>struct obj::@0::@19  c_file</definition>
+        <argsstring></argsstring>
+        <name>c_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="structobj_1a62f7454c75a37f00338a372d97ebb2df" prot="public" static="no" mutable="no">
+        <type>union obj::@0</type>
+        <definition>union obj::@0
+  storage_as</definition>
+        <argsstring></argsstring>
+        <name>storage_as</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="13">
+        <label>obj</label>
+        <link refid="structobj"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>f</edgelabel>
+          <edgelabel>vcell</edgelabel>
+          <edgelabel>env</edgelabel>
+          <edgelabel>cdr</edgelabel>
+          <edgelabel>data</edgelabel>
+          <edgelabel>code</edgelabel>
+          <edgelabel>car</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="12" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="11" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structobj_1a2ed820d235dd4d4df2bc2ea9799ebd03" prot="public" virt="non-virtual"><scope>obj</scope><name>c_file</name></member>
+      <member refid="structobj_1a978eb5859f110dfaaea622825e773546" prot="public" virt="non-virtual"><scope>obj</scope><name>car</name></member>
+      <member refid="structobj_1ad9dd126ad0ca7117d0029461ab58b0c9" prot="public" virt="non-virtual"><scope>obj</scope><name>cdr</name></member>
+      <member refid="structobj_1a963d05e321b07d535e02b7f5746a47ad" prot="public" virt="non-virtual"><scope>obj</scope><name>closure</name></member>
+      <member refid="structobj_1a0009116eb376765213d6c950a2cd127f" prot="public" virt="non-virtual"><scope>obj</scope><name>code</name></member>
+      <member refid="structobj_1a2163c3071abc17d31a69dabcf1b2c181" prot="public" virt="non-virtual"><scope>obj</scope><name>cons</name></member>
+      <member refid="structobj_1a833926f2a6c6f14c5a31538b5823936a" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a8e9fe2db9aeb3b877be14b9e79ccfad1" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a23436a7a2b44939627b59df11be7ad75" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a91a70b77df95bd8b0830b49a094c2acb" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1ac24cea2bfcc927fd29bc74d1086707d8" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a0fd479ef40780a7f006cac3ea9475e75" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a897836203ebadbc206d67e460b4c9ff7" prot="public" virt="non-virtual"><scope>obj</scope><name>data</name></member>
+      <member refid="structobj_1a9f896a7e44ca992cb79dc4e897c47c74" prot="public" virt="non-virtual"><scope>obj</scope><name>dim</name></member>
+      <member refid="structobj_1aee400cb86f76c3cc9db31554f8759b2d" prot="public" virt="non-virtual"><scope>obj</scope><name>double_array</name></member>
+      <member refid="structobj_1ac0e1e5b77370e84d73273aa6ee561fde" prot="public" virt="non-virtual"><scope>obj</scope><name>env</name></member>
+      <member refid="structobj_1a615a31167cc2850b8be5cd357403c429" prot="public" virt="non-virtual"><scope>obj</scope><name>f</name></member>
+      <member refid="structobj_1a3efb0e1a16208deecbd84c15401f7cf8" prot="public" virt="non-virtual"><scope>obj</scope><name>f</name></member>
+      <member refid="structobj_1ac89e7fe9f6f35f2c3b13a7cf67da46bb" prot="public" virt="non-virtual"><scope>obj</scope><name>flonum</name></member>
+      <member refid="structobj_1a6ab58ba03b8c1d5c66e6125d9ee1e018" prot="public" virt="non-virtual"><scope>obj</scope><name>gc_mark</name></member>
+      <member refid="structobj_1a365c71cc4d624ee9d521fd8363ae1f29" prot="public" virt="non-virtual"><scope>obj</scope><name>lisp_array</name></member>
+      <member refid="structobj_1aa674a07fb34923fe7f238c377080d4b5" prot="public" virt="non-virtual"><scope>obj</scope><name>long_array</name></member>
+      <member refid="structobj_1a5ac083a645d964373f022d03df4849c8" prot="public" virt="non-virtual"><scope>obj</scope><name>name</name></member>
+      <member refid="structobj_1a277430f8b1d8fbc4f488b55e2d0efd77" prot="public" virt="non-virtual"><scope>obj</scope><name>pname</name></member>
+      <member refid="structobj_1a097112762279e1b4e8c8b8150970fa57" prot="public" virt="non-virtual"><scope>obj</scope><name>s_string</name></member>
+      <member refid="structobj_1a62f7454c75a37f00338a372d97ebb2df" prot="public" virt="non-virtual"><scope>obj</scope><name>storage_as</name></member>
+      <member refid="structobj_1a89b594fd3c24f1fcf50aaab398755e73" prot="public" virt="non-virtual"><scope>obj</scope><name>string</name></member>
+      <member refid="structobj_1a6a4bc6c80a806bd9b12fa3a1f7a30b41" prot="public" virt="non-virtual"><scope>obj</scope><name>subr</name></member>
+      <member refid="structobj_1a115f17dbe3c12d53c4cce3f0560e5f69" prot="public" virt="non-virtual"><scope>obj</scope><name>subr0</name></member>
+      <member refid="structobj_1abfea4b0e1ad88d2701de76f38fc8270e" prot="public" virt="non-virtual"><scope>obj</scope><name>subr1</name></member>
+      <member refid="structobj_1acaecf4754d4e1b350e8348646d028884" prot="public" virt="non-virtual"><scope>obj</scope><name>subr2</name></member>
+      <member refid="structobj_1a0a184467f850249442450f19f9d4a309" prot="public" virt="non-virtual"><scope>obj</scope><name>subr3</name></member>
+      <member refid="structobj_1acc1521009d41b94fa208624a36fd1e96" prot="public" virt="non-virtual"><scope>obj</scope><name>subr4</name></member>
+      <member refid="structobj_1a4b9573599ed2fb72f1468484f503900a" prot="public" virt="non-virtual"><scope>obj</scope><name>subr5</name></member>
+      <member refid="structobj_1a1dc836c133ba6492daad326cb4c99c00" prot="public" virt="non-virtual"><scope>obj</scope><name>subrm</name></member>
+      <member refid="structobj_1ad7a4bc1c96560cde31fc83b65a579147" prot="public" virt="non-virtual"><scope>obj</scope><name>symbol</name></member>
+      <member refid="structobj_1acd579dfd50a9ea905ca697ed8707bf3b" prot="public" virt="non-virtual"><scope>obj</scope><name>type</name></member>
+      <member refid="structobj_1a5cf15fd4ea9417d9dc35a49cea615d53" prot="public" virt="non-virtual"><scope>obj</scope><name>u_string</name></member>
+      <member refid="structobj_1a56932cfca68772427f20e10959ed5810" prot="public" virt="non-virtual"><scope>obj</scope><name>vcell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

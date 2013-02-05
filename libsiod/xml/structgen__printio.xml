@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="structgen__printio" kind="struct" prot="public">
+    <compoundname>gen_printio</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgen__printio_1a35a68e8a6441980541873fcecc482413" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* putc_fcn)(int, void *)</definition>
+        <argsstring>)(int, void *)</argsstring>
+        <name>putc_fcn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="140" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgen__printio_1aca590c5fe00f617fd12ebae11fcc9151" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* puts_fcn)(char *, void *)</definition>
+        <argsstring>)(char *, void *)</argsstring>
+        <name>puts_fcn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="141" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgen__printio_1a53ec276a789f5ba6ca66bda55e7784d5" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* cb_argument</definition>
+        <argsstring></argsstring>
+        <name>cb_argument</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="142" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="140" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="139" bodyend="142"/>
+    <listofallmembers>
+      <member refid="structgen__printio_1a53ec276a789f5ba6ca66bda55e7784d5" prot="public" virt="non-virtual"><scope>gen_printio</scope><name>cb_argument</name></member>
+      <member refid="structgen__printio_1a35a68e8a6441980541873fcecc482413" prot="public" virt="non-virtual"><scope>gen_printio</scope><name>putc_fcn</name></member>
+      <member refid="structgen__printio_1aca590c5fe00f617fd12ebae11fcc9151" prot="public" virt="non-virtual"><scope>gen_printio</scope><name>puts_fcn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

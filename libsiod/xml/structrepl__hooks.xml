@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="structrepl__hooks" kind="struct" prot="public">
+    <compoundname>repl_hooks</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrepl__hooks_1ad49390e225e557ee445ea7ff70d1023d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* repl_puts)(char *)</definition>
+        <argsstring>)(char *)</argsstring>
+        <name>repl_puts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="150" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrepl__hooks_1aef11d3022f9e416f47cb03ab3de9b532" prot="public" static="no" mutable="no">
+        <type><ref refid="structobj" kindref="compound">LISP</ref>(*</type>
+        <definition>LISP(* repl_read)(void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>repl_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="151" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrepl__hooks_1a712d9b729e1b6bd93388b4102125fb37" prot="public" static="no" mutable="no">
+        <type><ref refid="structobj" kindref="compound">LISP</ref>(*</type>
+        <definition>LISP(* repl_eval)(LISP)</definition>
+        <argsstring>)(LISP)</argsstring>
+        <name>repl_eval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="152" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrepl__hooks_1aaee51f45c9d4e2bb8c49d5bacaa95c57" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* repl_print)(LISP)</definition>
+        <argsstring>)(LISP)</argsstring>
+        <name>repl_print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="153" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="17">
+        <label>repl_hooks</label>
+        <link refid="structrepl__hooks"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>repl_eval</edgelabel>
+          <edgelabel>repl_read</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>obj</label>
+        <link refid="structobj"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>f</edgelabel>
+          <edgelabel>vcell</edgelabel>
+          <edgelabel>env</edgelabel>
+          <edgelabel>cdr</edgelabel>
+          <edgelabel>data</edgelabel>
+          <edgelabel>code</edgelabel>
+          <edgelabel>car</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" line="150" bodyfile="C:/Users/josburn/Documents/programming/siod/libsiod/siod.h" bodystart="149" bodyend="153"/>
+    <listofallmembers>
+      <member refid="structrepl__hooks_1a712d9b729e1b6bd93388b4102125fb37" prot="public" virt="non-virtual"><scope>repl_hooks</scope><name>repl_eval</name></member>
+      <member refid="structrepl__hooks_1aaee51f45c9d4e2bb8c49d5bacaa95c57" prot="public" virt="non-virtual"><scope>repl_hooks</scope><name>repl_print</name></member>
+      <member refid="structrepl__hooks_1ad49390e225e557ee445ea7ff70d1023d" prot="public" virt="non-virtual"><scope>repl_hooks</scope><name>repl_puts</name></member>
+      <member refid="structrepl__hooks_1aef11d3022f9e416f47cb03ab3de9b532" prot="public" virt="non-virtual"><scope>repl_hooks</scope><name>repl_read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
